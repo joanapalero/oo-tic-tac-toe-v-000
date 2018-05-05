@@ -86,7 +86,7 @@ WIN_COMBINATIONS.detect do |win_combination|
 
 # full
 def full?
-  @board.all? {|token| token == "X" || token == "O"}
+  @board.all? |token| token == "X" || token == "O"
 end
 
 # draw
